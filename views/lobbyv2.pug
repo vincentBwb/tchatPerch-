@@ -1,0 +1,33 @@
+html
+  head
+
+    link(rel="stylesheet" type="text/css" href="/lobby.css")
+
+    title lobby chat
+  
+  .barre_top
+    a(href='/html/profil.html')
+      img.logo(src='/assets/favicon.ico')
+    a(href='/html/logIn.html')
+      img.imagicon(src='/assets/iconelogin.jpg')
+      
+    img.logout(src='/assets/iconlogout.png')
+    
+  .listuser
+    h3(style='text-align: center') Utilisateur Connectes
+    table#users.list_users
+      tr
+        td
+          input(type='image', classe='imageuser', src='/assets/iconelogin.jpg', width='25px')
+        td Global
+  .partie
+    h1(style='text-align: center;') Partie en cours
+    table#list_partie
+    a(href='/html/create')
+      input.create(type='submit', value='create party')
+  .tchat
+    ul#messages
+    form(action='')
+      input#m(autocomplete='off')
+      button Send
+  script(src='/script/lobby.js')

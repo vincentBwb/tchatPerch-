@@ -1,0 +1,27 @@
+{
+  "name": "g2_tchat",
+  "version": "1.0.0",
+  "description": "Tchat Perche Project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/dwwm_mtp_4/TchatPerche/G2_tchat.git"
+  },
+  "author": "Groupe 2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/dwwm_mtp_4/TchatPerche/G2_tchat/issues"
+  },
+  "homepage": "https://gitlab.com/dwwm_mtp_4/TchatPerche/G2_tchat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "mongodb": "^4.0.0",
+    "password-hash": "^1.2.2",
+    "pug": "^3.0.2",
+    "socket.io": "^4.1.3"
+  }
+}

@@ -1,0 +1,31 @@
+doctype html
+head
+
+  link(rel='stylesheet' href='/lobby.css')
+  title lobby chat
+.barre_top
+  img.logo(src='logo_chatperche.png')
+  a(href='./profil.html')
+    img.imagicon(src='iconelogin.jpg')
+    a(href='/')
+      img.logout(src='iconlogout.png')
+.listuser
+  h3(style='text-align: center') Utilisateur Connectes
+  table#users.list_users
+    tr
+      td
+        input(type='image' classe='imageuser' src='iconelogin.jpg' width='25px')
+      td Global
+.partie
+  h1(style='text-align: center;') Partie en cours
+  table#list_partie
+  a(href='./create')
+    input.create(type='submit' value='create party')
+.tchat
+  ul#messages
+  .zone_saisie
+    input#m
+    button(onclick='send()') Send
+script(src='/socket.io/socket.io.js')
+script(src='/script/lobby.js')
+script(src='/script/tchatGen.js')

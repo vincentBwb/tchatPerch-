@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./profil.css"/>
+  <title>Profil</title>
+</head>
+
+
+<body>
+
+  <div class="box">    
+
+    <h2>Modifier mon profil</h2>
+
+    <img src="./assets/iconelogin.png" class="logoicon"><br><br>
+      
+    <form action="/profil" method="post">
+
+      <div class="DivlogIn1">  
+          
+        <input name="username" type="text" placeholder="UserName" id="inputUsername" required> <br><br>
+        <input name="password" type="password" placeholder="Password" id="inputPassword" required> <br> <br>
+        <input class="mail" type="email" placeholder="xxxxx@exemple.com" require pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"/><br>
+
+        <button class="but" type="submit" onclick="" id=" button">Valider les changements</button> 
+
+      </div>       
+        
+    </form>    
+
+  </div>
+
+</body>
+</html>

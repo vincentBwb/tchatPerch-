@@ -1,0 +1,49 @@
+
+Git's Quick Guide
+--------------------------------------------------------------------------------
+
+Récupérer le dépôt distant la première fois (!!! A FAIRE UNE SEULE FOIS !!!)
+! git clone https://gitlab.com/dwwm_mtp_4/TchatPerche/G2_tchat.git
+Installer les dépendances du projet (!!! A FAIRE UNE SEULE FOIS !!!)
+! npm install
+
+--------------------------------------------------------------------------------
+
+Faire un commit: Envoyer les fichiers de votre espace de travail vers le dépôt distant
+(!!! Peut éventuellement écraser les fichiers de vos collaborateurs ou générer des conflits !!!)
+
+? git add --all
+? git commit -m "Commit description"
+? git push
+
+--------------------------------------------------------------------------------
+
+Faire un pull: Récupérer les dernière mises à jour du dépôt distant
+(!!! Peut éventuellement écraser certains fichiers de votre espace de travail ou générer des conflits !!!)
+
+* git pull
+
+--------------------------------------------------------------------------------
+
+Quelle est la différence entre git pull et git fetch ?
+
+La commande git fetch va récupérer toutes les données des commits effectués sur la branche
+courante qui n'existent pas encore dans votre version en local. Ces données seront stockées
+dans le répertoire de travail local mais ne seront pas fusionnées avec votre branche locale.
+
+Si vous souhaitez fusionner ces données pour que votre branche soit à jour,
+vous devez utiliser ensuite la commande git merge.
+
+La commande git pull est en fait la commande qui regroupe les commandes git fetch suivie de git merge.
+Cette commande télécharge les données des commits qui n'ont pas encore été récupérées dans votre
+branche locale puis fusionne ensuite ces données.
+
+Le choix de la commande à utiliser dépend de la façon dont vous souhaitez travailler.
+
+La commande git pull automatise la mise à jour des données mais peut entraîner de nombreux conflits
+si vous avez modifié beaucoup de fichiers.
+
+Utiliser la commande git fetch permet de garder son répertoire de travail à jour et de contrôler
+le moment où l'on souhaite fusionner les données.
+
+--------------------------------------------------------------------------------

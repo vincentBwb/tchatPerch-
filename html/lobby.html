@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lobby.css">
+    <title>lobby chat</title>
+</head>
+
+<body>
+    
+    <div class="barre_top">
+        <img src="favicon.ico" class="logo">
+        <a href="profil.html"><img src="iconelogin.jpg" class="imagicon" />
+        <a href="/"><img src="iconlogout.png" class="logout" /></a>
+    </div>
+
+    <div class="listuser">
+        <h3 style="text-align: center">Utilisateur Connectes</h3>
+        <table class=list_users id="users">
+            <tr>
+                <td><input type="image" classe="imageuser" src="iconelogin.jpg" width="25px"></td>
+                <td>Global</td>
+            </tr>
+
+        </table>
+    </div>
+    
+    <div class="partie">
+        <h1 style="text-align: center;">Partie en cours</h1>    
+        <table id="list_partie">
+        </table>
+        <a href="create">
+            <input type="submit" class="create" value="create party"/>
+        </a>
+    </div>
+    
+    <div class="tchat">
+       
+      
+      <ul id="messages"></ul>
+      <div class="zone_saisie">
+          <input id="m" /> <button id="boutton" onclick="send()">Send</button>
+      </div>
+    
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="lobby.js"></script>
+</body>
+
+</html>

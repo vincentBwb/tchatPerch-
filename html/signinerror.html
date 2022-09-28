@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="./html/style.css"> -->
+        <title>SignIn</title>
+    </head>
+
+    <body>
+        <style>
+            body {
+                font-family : Helvetica, sans-serif;
+                margin: 0%;
+            }
+
+            #button {
+                background-color: teal;
+                color: white;
+                font-weight: bold;
+                border-radius: 3px;
+                border-color: rgb(0, 128, 128);
+                padding: 2%;
+                border-style:solid;
+                margin-left: 110px;
+   
+            }
+
+            a {
+             color: teal;
+            }
+
+            a:visited {
+                color: teal;
+            
+            }
+
+
+            .DivlogIn1{
+                width: 80%;
+                padding: 10%;
+                background-color:white;
+            
+            }
+
+            .DivlogIn2 {
+                background-color: white;
+                width: 30%;
+                padding: 2%;
+                text-align: center;
+                margin: auto;
+                border-radius: 10px;
+                box-shadow: rgba(0, 128, 128, 0.2) 0px 8px 24px;
+            }
+
+            p {
+                color: red;
+                text-align: center;
+            }
+
+        </style>
+
+        <p>Ce nom d'utilisateur existe déjà, veuillez en choisir un autre</p>
+
+        <form action="/signin2" method="post">
+
+            <div class="DivlogIn1">  
+                <div class="DivlogIn2">
+                    <input type="email" placeholder="eMail" name="email" id="email" required> <br><br>
+                    <input type="text" placeholder="Username" name="username" id="username" required> <br><br>
+                    <input type="password" placeholder="Password" name="password" id="password" required> <br><br>
+                    <input type="submit" value="SIGNIN" id="button"><br><br>
+                </div>
+            </div> 
+        </form>
+
+    </body>
+
+
+</html>
